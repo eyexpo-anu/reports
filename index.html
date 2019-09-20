@@ -1,0 +1,518 @@
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script src="download.js"></script>
+<style>
+table, th, td{font-size:13px; border:1px solid gray; border-collapse:collapse;}
+table th,table td{padding:5px;}
+#wrapper{padding: 0;margin: auto;text-align: center;}
+body{margin: 0;padding: 0;}
+table{margin-bottom: 7em!important;}
+.red{background-color: #ffcccc;}
+caption
+{
+text-align: left;}
+Header{background-color: #21D4FD;
+background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+}
+</style>
+<title>Bug_Report</title>
+<body>
+      <Header class="jumbotron  text-center">
+          <h1 style="color: White">Weekly Bug Report</h1>
+          <blockquote style="color: White">Last Updated: September 19, 2019</blockquote>
+          
+      </Header>
+      
+     
+      
+  
+<div class="container">
+   
+    <h2>Platform Bugs</h2>
+    <button type="button" class="btn btn-success" id="download" onclick="exportTableToExcel('id1')">Download Report</button>
+    <h4> This includes: </h4>
+    <ul><li>Bugs repro with all the project types or atleast two</li><li>Sidebar Bugs</li></ul>
+    <table class="table table-striped" id="id1">
+      <tr>
+      <th><nobr>ID</nobr></th>
+    <th><nobr>Title</nobr></th>
+    <th><nobr>Severity(S)</nobr></th>
+    <th><nobr>Priority(P)</nobr></th>
+    <th><nobr>Status</nobr></th>
+      </tr>
+    <tr valign='top'>
+    <td  ><nobr>861</nobr></td>
+    <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=861' >Failure to upload assets</a>
+    </nobr></td>
+    <td  class='red' ><nobr>1</nobr></td>
+    <td  class='red' ><nobr>1</nobr></td>
+    <td  ><nobr>Active</nobr></td>
+    </tr>
+    <tr valign='top'>
+    <td  ><nobr>908</nobr></td>
+    <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=908' >[STAGING] Unable to upload assets</a>
+    </nobr></td>
+    <td  class='red' ><nobr>1</nobr></td>
+    <td  class='red' ><nobr>1</nobr></td>
+    <td  ><nobr>Active</nobr></td>
+    </tr>
+    <tr valign='top'>
+    <td  ><nobr>789</nobr></td>
+    <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=789' >Uploading files in different asset sections has weird behaviour while an upload is already in progress</a>
+    </nobr></td>
+    <td  ><nobr>2</nobr></td>
+    <td  ><nobr>2</nobr></td>
+    <td  ><nobr>Active</nobr></td>
+    </tr>
+    <tr valign='top'>
+    <td  ><nobr>818</nobr></td>
+    <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=818' >Missing thumbnail of the uploaded files</a>
+    </nobr></td>
+    <td class='red'  ><nobr>1</nobr></td>
+    <td  ><nobr>2</nobr></td>
+    <td  ><nobr>Active</nobr></td>
+    </tr>
+    <tr valign='top'>
+    <td  ><nobr>838</nobr></td>
+    <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=838' >Uploading 3D objects takes a long time</a>
+    </nobr></td>
+    <td class='red'  ><nobr>1</nobr></td>
+    <td  ><nobr>2</nobr></td>
+    <td  ><nobr>Active</nobr></td>
+    </tr>
+    <tr valign='top'>
+    <td  ><nobr>862</nobr></td>
+    <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=862' >Audio thumbnail can be seen in pano asset section just after uploading</a>
+    </nobr></td>
+    <td  ><nobr>3</nobr></td>
+    <td  ><nobr>2</nobr></td>
+    <td  ><nobr>Active</nobr></td>
+    </tr>
+    <tr valign='top'>
+    <td  ><nobr>899</nobr></td>
+    <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=899' >[Mobile] The project thumbnail is partially linked to the live view</a>
+    </nobr></td>
+    <td  class='red' ><nobr>1</nobr></td>
+    <td  ><nobr>2</nobr></td>
+    <td  ><nobr>Active</nobr></td>
+    </tr>
+    <tr valign='top'>
+    <td  ><nobr>891</nobr></td>
+    <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=891' >The 3D assets are overflowing </a>
+    </nobr></td>
+    <td  ><nobr>2</nobr></td>
+    <td  ><nobr>2</nobr></td>
+    <td  ><nobr>Active</nobr></td>
+    </tr>
+    <tr valign='top'>
+    <td  ><nobr>896</nobr></td>
+    <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=896' >Incorrect tool tips in the dashboard sidebar</a>
+    </nobr></td>
+    <td  ><nobr>2</nobr></td>
+    <td  ><nobr>2</nobr></td>
+    <td  ><nobr>Active</nobr></td>
+    </tr>
+    <tr valign='top'>
+    <td  ><nobr>742</nobr></td>
+    <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=742' >Switching tabs has delay when user has 20-30 projects</a>
+    </nobr></td>
+    <td  ><nobr>3</nobr></td>
+    <td  ><nobr>3</nobr></td>
+    <td  ><nobr>Active</nobr></td>
+    </tr>
+    <tr valign='top'>
+    <td  ><nobr>805</nobr></td>
+    <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=805' >Uploading files takes delay to show up in asset section</a>
+    </nobr></td>
+    <td  ><nobr>3</nobr></td>
+    <td  ><nobr>3</nobr></td>
+    <td  ><nobr>Active</nobr></td>
+    </tr>
+    <tr valign='top'>
+    <td  ><nobr>872</nobr></td>
+    <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=872' >[Mozilla] The project icons appear tiny on the Go to Builder/Go to upload button</a>
+    </nobr></td>
+    <td  ><nobr>3</nobr></td>
+    <td  ><nobr>3</nobr></td>
+    <td  ><nobr>Active</nobr></td>
+    </tr>
+    <tr valign='top'>
+    <td  ><nobr>892</nobr></td>
+    <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=892' >Missing thumbnail for few of the 3D objects </a>
+    </nobr></td>
+    <td  ><nobr>3</nobr></td>
+    <td  ><nobr>3</nobr></td>
+    <td  ><nobr>Active</nobr></td>
+    </tr>
+    <tr valign='top'>
+    <td  ><nobr>737</nobr></td>
+    <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=737' >[UX Optimization] Some UI indication while the project list is loading instead of default no project list available placeholder</a>
+    </nobr></td>
+    <td  ><nobr>4</nobr></td>
+    <td  ><nobr>4</nobr></td>
+    <td  ><nobr>Active</nobr></td>
+    </tr>
+    </table>
+
+
+    <h2>Spotlight Bugs</h2>
+    <button type="button" class="btn btn-success" id="download" onclick="exportTableToExcel('id2')">Download Report</button>
+    <h4> This includes: </h4>
+    <ul><li>Spotlight builder & viewer bugs</li><li>Spotlight Project Bugs</li></ul>
+    <table class="table table-striped" id="id2">
+      <tr>
+      <th><nobr>ID</nobr></th>
+    <th><nobr>Title</nobr></th>
+    <th><nobr>Severity(S)</nobr></th>
+    <th><nobr>Priority(P)</nobr></th>
+    <th><nobr>Status</nobr></th>
+      </tr>
+    <tr valign='top'>
+    <td  ><nobr>804</nobr></td>
+    <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=804' >[Spotlight Project]The default size of the 3D objects does not fit the canvas</a>
+    </nobr></td>
+    <td  ><nobr>2</nobr></td>
+    <td  ><nobr>2</nobr></td>
+    <td  ><nobr>Active</nobr></td>
+    </tr>
+    <tr valign='top'>
+    <td  ><nobr>833</nobr></td>
+    <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=833' >[Spotlight Project] Back Button on spotlight / pro project is redirect to official website.</a>
+    </nobr></td>
+    <td  class='red' ><nobr>1</nobr></td>
+    <td  ><nobr>2</nobr></td>
+    <td  ><nobr>Active</nobr></td>
+    </tr>
+    <tr valign='top'>
+    <td  ><nobr>930</nobr></td>
+    <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=930' >[Spotlight Project] The hotspot dialog is available even after pressing back button</a>
+    </nobr></td>
+    <td  ><nobr>3</nobr></td>
+    <td  ><nobr>2</nobr></td>
+    <td  ><nobr>Active</nobr></td>
+    </tr>
+    <tr valign='top'>
+    <td  ><nobr>800</nobr></td>
+    <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=800' >[Spotlight Project] No object is found while using browser back/forward buttons</a>
+    </nobr></td>
+    <td  ><nobr>3</nobr></td>
+    <td  ><nobr>3</nobr></td>
+    <td  ><nobr>Active</nobr></td>
+    </tr>
+    <tr valign='top'>
+    <td  ><nobr>845</nobr></td>
+    <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=845' >[Spotlight project] The 3D object has delay in loading live view/preview</a>
+    </nobr></td>
+    <td  ><nobr>1</nobr></td>
+    <td  ><nobr>3</nobr></td>
+    <td  ><nobr>Active</nobr></td>
+    </tr>
+    <tr valign='top'>
+    <td  ><nobr>900</nobr></td>
+    <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=900' >[Mobile] The 3D object is not centered in the project thumbnail container</a>
+    </nobr></td>
+    <td  ><nobr>1</nobr></td>
+    <td  ><nobr>3</nobr></td>
+    <td  ><nobr>Active</nobr></td>
+    </tr>
+    </table> 
+    
+
+    <h2>Pro Tour Bugs</h2>
+    <button type="button" class="btn btn-success" id="download" onclick="exportTableToExcel('id3')">Download Report</button>
+    <h4> This includes: </h4>
+    <ul><li>Pro Tour builder & viewer bugs</li><li>Pro Tour Project Bugs</li></ul>
+    <table class="table table-striped" id="id3">
+      <tr>
+      <th><nobr>ID</nobr></th>
+    <th><nobr>Title</nobr></th>
+    <th><nobr>Severity(S)</nobr></th>
+    <th><nobr>Priority(P)</nobr></th>
+    <th><nobr>Status</nobr></th>
+      </tr>
+    <tr valign='top'>
+    <td  ><nobr>859</nobr></td>
+    <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=859' >[Mobile] Go to home in the tour editor button leads to 404 page</a>
+    </nobr></td>
+    <td  ><nobr>2</nobr></td>
+    <td  ><nobr>2</nobr></td>
+    <td  ><nobr>Active</nobr></td>
+    </tr>
+    <tr valign='top'>
+    <td  ><nobr>944</nobr></td>
+    <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=944' >[Pro Project] The title changes are not directly reflected to live view</a>
+    </nobr></td>
+    <td  ><nobr>2</nobr></td>
+    <td  ><nobr>2</nobr></td>
+    <td  ><nobr>Active</nobr></td>
+    </tr>
+    <tr valign='top'>
+    <td  ><nobr>826</nobr></td>
+    <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=826' >[Pro Tour Project] Needs a  refresh to see the updated choose model list</a>
+    </nobr></td>
+    <td  ><nobr>3</nobr></td>
+    <td  ><nobr>3</nobr></td>
+    <td  ><nobr>Active</nobr></td>
+    </tr>
+    </table>
+      
+    
+
+    <h2>KrPano Bugs</h2>
+    <button type="button" class="btn btn-success" id="download" onclick="exportTableToExcel('id4')">Download Report</button>
+    <h4> This includes: </h4>
+    <ul><li>KrPano builder & viewer bugs</li><li>KrPano Project Bugs</li></ul>
+    <table class="table table-striped" id="id4"> 
+      <tr>
+      <th><nobr>ID</nobr></th>
+    <th><nobr>Title</nobr></th>
+    <th><nobr>Severity(S)</nobr></th>
+    <th><nobr>Priority(P)</nobr></th>
+    <th><nobr>Status</nobr></th>
+      </tr>
+      <tr valign='top'>
+        <td  ><nobr>Bug 651</nobr></td>
+        <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=651' > [KRPano ] [Mobile] The Uploading status dialog is truncated</a>
+        </nobr></td>
+        <td  ><nobr>2</nobr></td>
+        <td  ><nobr>3</nobr></td>
+        <td  ><nobr>Active</nobr></td>
+        </tr>
+        </table>
+
+
+    <h2>Account Bugs</h2>
+    <button type="button" class="btn btn-success" id="download" onclick="exportTableToExcel('id5')">Download Report</button>
+    <h4> This includes: </h4>
+    <ul><li>Bugs related to Profile tab</li><li>Bugs in Login, Register etc</li></ul>
+    <table class="table table-striped" id="id5">
+      <tr>
+      <th><nobr>ID</nobr></th>
+    <th><nobr>Title</nobr></th>
+    <th><nobr>Severity(S)</nobr></th>
+    <th><nobr>Priority(P)</nobr></th>
+    <th><nobr>Status</nobr></th>
+      </tr>
+    <tr valign='top'>
+    <td  ><nobr>808</nobr></td>
+    <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=808' >[STAGING] Forgot password does not work</a>
+    </nobr></td>
+    <td  class='red' ><nobr>1</nobr></td>
+    <td class='red'  ><nobr>1</nobr></td>
+    <td  ><nobr>Active</nobr></td>
+    </tr>
+    <tr valign='top'>
+    <td  ><nobr>283</nobr></td>
+    <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=283' >The timeout notification does not appear if the window is inactive</a>
+    </nobr></td>
+    <td  ><nobr>3</nobr></td>
+    <td  ><nobr>2</nobr></td>
+    <td  ><nobr>Active</nobr></td>
+    </tr>
+    <tr valign='top'>
+    <td  ><nobr>321</nobr></td>
+    <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=321' >Timeout does not log the user out of the app</a>
+    </nobr></td>
+    <td  ><nobr>2</nobr></td>
+    <td  ><nobr>2</nobr></td>
+    <td  ><nobr>Active</nobr></td>
+    </tr>
+    <tr valign='top'>
+    <td  ><nobr>713</nobr></td>
+    <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=713' >[UX optimization]User is able to work with the link even if its expired</a>
+    </nobr></td>
+    <td  ><nobr>3</nobr></td>
+    <td  ><nobr>2</nobr></td>
+    <td  ><nobr>Active</nobr></td>
+    </tr>
+    <tr valign='top'>
+    <td  ><nobr>722</nobr></td>
+    <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=722' >[Production] [UX] Admin unable to change the default language depending on the region</a>
+    </nobr></td>
+    <td  ><nobr>2</nobr></td>
+    <td  ><nobr>2</nobr></td>
+    <td  ><nobr>Active</nobr></td>
+    </tr>
+    <tr valign='top'>
+    <td  ><nobr>677</nobr></td>
+    <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=677' >Dashboard shows a resizing glitch in the mobile mode</a>
+    </nobr></td>
+    <td  ><nobr>3</nobr></td>
+    <td  ><nobr>3</nobr></td>
+    <td  ><nobr>Active</nobr></td>
+    </tr>
+    <tr valign='top'>
+    <td  ><nobr>712</nobr></td>
+    <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=712' >No UI indication if entered email is/not in the system in forgot password page</a>
+    </nobr></td>
+    <td  ><nobr>3</nobr></td>
+    <td  ><nobr>3</nobr></td>
+    <td  ><nobr>Active</nobr></td>
+    </tr>
+    <tr valign='top'>
+    <td  ><nobr>772</nobr></td>
+    <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=772' >legacy login session in redis is forever  </a>
+    </nobr></td>
+    <td  ><nobr>3</nobr></td>
+    <td  ><nobr>3</nobr></td>
+    <td  ><nobr>Active</nobr></td>
+    </tr>
+    <tr valign='top'>
+    <td  ><nobr>771</nobr></td>
+    <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=771' >Unable to login in the first attempt</a>
+    </nobr></td>
+    <td  ><nobr>4</nobr></td>
+    <td  ><nobr>4</nobr></td>
+    <td  ><nobr>Active</nobr></td>
+    </tr>
+    <tr valign='top'>
+    <td  ><nobr>822</nobr></td>
+    <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=822' >Incorrect info of hosting space for tier 4 user</a>
+    </nobr></td>
+    <td ><nobr>1</nobr></td>
+    <td  ><nobr>4</nobr></td>
+    <td  ><nobr>Active</nobr></td>
+    </tr>
+    </table>
+
+
+    <h2>Analytics Bugs</h2>
+    <button type="button" class="btn btn-success" id="download" onclick="exportTableToExcel('id6')">Download Report</button>
+    <h4> This includes: </h4>
+    <ul><li>Bugs related to Profile tab</li><li>Bugs in Login, Register etc</li></ul>
+    <table class="table table-striped" id="id6"> 
+      <tr>
+      <th><nobr>ID</nobr></th>
+    <th><nobr>Title</nobr></th>
+    <th><nobr>Severity(S)</nobr></th>
+    <th><nobr>Priority(P)</nobr></th>
+    <th><nobr>Status</nobr></th>
+      </tr>
+    <tr valign='top'>
+    <td  ><nobr>881</nobr></td>
+    <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=881' >Selecting scenes from scene menu adds a view to the scenes visited</a>
+    </nobr></td>
+    <td  class='red' ><nobr>1</nobr></td>
+    <td  class='red' ><nobr>1</nobr></td>
+    <td  ><nobr>Active</nobr></td>
+    </tr>
+    <tr valign='top'>
+    <td  ><nobr>882</nobr></td>
+    <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=882' >Missing pie charts when more than 4 hotspots are added to the scene</a>
+    </nobr></td>
+    <td  class='red' ><nobr>1</nobr></td>
+    <td class='red'  ><nobr>1</nobr></td>
+    <td  ><nobr>Active</nobr></td>
+    </tr>
+    <tr valign='top'>
+    <td  ><nobr>883</nobr></td>
+    <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=883' >Video id&#039;s are displayed instead of video names in the scene overview</a>
+    </nobr></td>
+    <td  class='red' ><nobr>1</nobr></td>
+    <td  class='red' ><nobr>1</nobr></td>
+    <td  ><nobr>Active</nobr></td>
+    </tr>
+    <tr valign='top'>
+    <td  ><nobr>885</nobr></td>
+    <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=885' >Unable to download the data of tour overview/HotspotOverview/Widget verview</a>
+    </nobr></td>
+    <td class='red'  ><nobr>1</nobr></td>
+    <td  class='red' ><nobr>1</nobr></td>
+    <td  ><nobr>Active</nobr></td>
+    </tr>
+    <tr valign='top'>
+    <td  ><nobr>905</nobr></td>
+    <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=905' >Incorrect icon for download/export pdf </a>
+    </nobr></td>
+    <td  ><nobr>2</nobr></td>
+    <td  class='red' ><nobr>1</nobr></td>
+    <td  ><nobr>Active</nobr></td>
+    </tr>
+    <tr valign='top'>
+    <td  ><nobr>903</nobr></td>
+    <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=903' >Incorrect legends in the Hotspot-URL bar charts</a>
+    </nobr></td>
+    <td  ><nobr>2</nobr></td>
+    <td  ><nobr>2</nobr></td>
+    <td  ><nobr>Active</nobr></td>
+    </tr>
+    <tr valign='top'>
+    <td  ><nobr>907</nobr></td>
+    <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=907' >Disabled &quot;Go&quot; button even after selection</a>
+    </nobr></td>
+    <td  ><nobr>2</nobr></td>
+    <td  ><nobr>2</nobr></td>
+    <td  ><nobr>Active</nobr></td>
+    </tr>
+    </table>
+
+
+
+    <h2>Production-Staging Bugs</h2>
+    <button type="button" class="btn btn-success" id="download" onclick="exportTableToExcel('id7')">Download Report</button>
+    <h4> This includes: </h4>
+    <ul><li>Bugs logged on Staging</li><li>Bugs logged on Production</li></ul>
+    <table class="table table-striped" id="id7"> 
+      <tr>
+      <th><nobr>ID</nobr></th>
+    <th><nobr>Title</nobr></th>
+    <th><nobr>Severity(S)</nobr></th>
+    <th><nobr>Priority(P)</nobr></th>
+    <th><nobr>Status</nobr></th>
+      </tr>
+      <tr valign='top'>
+        <td  ><nobr>808</nobr></td>
+        <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=808' > [STAGING] Forgot password does not work</a>
+        </nobr></td>
+        <td  class='red' ><nobr>1</nobr></td>
+        <td  class='red' ><nobr>1</nobr></td>
+        <td  ><nobr>Active</nobr></td>
+        </tr>
+      <tr valign='top'>
+        <td  ><nobr>908</nobr></td>
+        <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=908' >[STAGING] Unable to upload assets</a>
+        </nobr></td>
+        <td  class='red' ><nobr>1</nobr></td>
+        <td  class='red' ><nobr>1</nobr></td>
+        <td  ><nobr>Active</nobr></td>
+        </tr>
+      <tr valign='top'>
+        <td  ><nobr>722</nobr></td>
+        <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=722' >[Production] [UX] Admin unable to change the default language depending on the region</a>
+        </nobr></td>
+        <td  ><nobr>2</nobr></td>
+        <td  ><nobr>2</nobr></td>
+        <td  ><nobr>Active</nobr></td>
+        </tr>
+      
+          <tr valign='top'>
+            <td  ><nobr>758</nobr></td>
+            <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=758' > [Production] Disabled video widget controls after successful upload</a>
+            </nobr></td>
+            <td  class='red' ><nobr>1</nobr></td>
+            <td  ><nobr>3</nobr></td>
+            <td  ><nobr>Active</nobr></td>
+            </tr>
+           
+
+              <tr valign='top'>
+                <td  ><nobr>910</nobr></td>
+                <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=910' > [Simultaneous Login to QA + STAGING] 404 when user clicks on "Go to builder"</a>
+                </nobr></td>
+                <td  ><nobr>4</nobr></td>
+                <td  ><nobr>4</nobr></td>
+                <td  ><nobr>Active</nobr></td>
+                </tr>
+
+              
+      </table>
+  </div>
+  
+
+
+</body>
+</html>
