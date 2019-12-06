@@ -1,3 +1,4 @@
+
 <html xmlns='http://www.w3.org/1999/xhtml'>
 <head>
 <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
@@ -6,49 +7,30 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 <script src="download.js"></script>
-<style>
-table, th, td{font-size:13px; border:1px solid gray; border-collapse:collapse;}
-table th,table td{padding:5px;}
-#wrapper{padding: 0;margin: auto;text-align: center;}
-body{margin: 0;padding: 0;}
-table{margin-bottom: 7em!important;}
-.red{background-color: #ffcccc;}
-
-
-tr:hover {
-  background-color:#ffb2b2!important;
-  cursor: pointer;
-  -webkit-transition: background-color 2s ease-out;
-  -moz-transition: background-color 2s ease-out;
-  -o-transition: background-color 2s ease-out;
-  transition: background-color 2s ease-out;
-}
-caption
-{
-text-align: left;}
-Header{background-color: #21D4FD;
-background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
-}
-i{
- 
-    animation:spin 4s linear infinite;
-}
-
-@keyframes spin { 100% { -webkit-transform: scale(360deg); transform:rotate(360deg); } }
-</style>
+<link href="https://fonts.googleapis.com/css?family=Bebas+Neue|Oswald&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 <title>Bug_Report</title>
 <body>
-      <Header class="jumbotron  text-center">
-          <h1 style="color: White">Weekly Bug Report</h1>
-          <blockquote style="color: White">Last Updated: October 4, 2019</blockquote>
-          
+    <Header class="text-center"><div class="waveWrapper waveAnimation">
+        
+        <div class="waveWrapperInner bgTop">
+          <div class="wave waveTop" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-top.png')"></div>
+        </div>
+        <div class="waveWrapperInner bgMiddle">
+          <div class="wave waveMiddle" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-mid.png')"></div>
+        </div>
+        <h1>Weekly Bug Report</h1>
+        <address>Last Updated: Nov 29, 2019 By <b>ANU<b></address>
+       
+        <div class="waveWrapperInner bgBottom">
+          <div class="wave waveBottom" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-bot.png')"></div>
+        </div>
+      </div>
       </Header>
-      
-  <blockquote style="text-align:center;color:red">Note: The bugs with "Star" icon in front of them are logged in this week</blockquote>  
-      
+            
   
 <div class="container">
-   
+   <div id="t1">
     <h2>Platform Bugs</h2>
     <button type="button" class="btn btn-success" id="download" onclick="exportTableToExcel('id1')">Download Report</button>
     <h4> This includes: </h4>
@@ -61,6 +43,9 @@ i{
     <th><nobr>Priority(P)</nobr></th>
     <th><nobr>Status</nobr></th>
       </tr>
+    </div>
+ 
+      
     <tr valign='top'>
     <td  ><nobr>861</nobr></td>
     <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=861' >Failure to upload assets</a>
@@ -69,32 +54,27 @@ i{
     <td  class='red' ><nobr>1</nobr></td>
     <td  ><nobr>Active </nobr></td>
     </tr>
-          
+   <tr valign='top'>
+      <td  ><nobr>1130</nobr></td>
+      <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=1130' > Pressing enter after adding text to the search bar clears the text</a>
+      </nobr></td>
+      <td  class='red' ><nobr>1</nobr></td>
+      <td><nobr>2</nobr></td>
+      <td  ><nobr>Active </nobr></td>
+      </tr>
+
     <tr valign='top'>
-    <td  ><nobr>955</nobr></td>
-    <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=955' > [Mobile] Uploader overlaps with the bottom drawer & the Go to builder button</a>
-    </nobr></td>
-    <td  class='red' ><nobr>1</nobr></td>
-    <td ><nobr>2</nobr></td>
-    <td  ><nobr>Active</nobr></td>
-    </tr>
- <tr valign='top'>
-    <td  ><nobr>954</nobr></td>
-    <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=954' > Missing asset thumbnail for every first upload in every asset section
-</a>
-    </nobr></td>
-    <td><nobr>2</nobr></td>
-    <td><nobr>2</nobr></td>
-    <td  ><nobr>Active</nobr></td>
-    </tr>
-      <tr valign='top'>
-    <td  ><nobr>956</nobr></td>
-    <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=956' >Missing Share action in the mobile mode</a>
-    </nobr></td>
-    <td  ><nobr>2</nobr></td>
-    <td  ><nobr>2</nobr></td>
-    <td  ><nobr>Active</nobr></td>
-    </tr>
+      <td  ><nobr>785</nobr></td>
+      <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=785' > Recently uploaded files appear at the end of the asset list</a>
+      </nobr></td>
+      <td  class='red' ><nobr>1</nobr></td>
+      <td><nobr>2</nobr></td>
+      <td  ><nobr>Active </nobr></td>
+      </tr>
+
+
+    
+
     <tr valign='top'>
     <td  ><nobr>789</nobr></td>
     <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=789' >Uploading files in different asset sections has weird behaviour while an upload is already in progress</a>
@@ -111,14 +91,9 @@ i{
     <td  ><nobr>2</nobr></td>
     <td  ><nobr>Active</nobr></td>
     </tr>
-    <tr valign='top'>
-    <td  ><nobr>838</nobr></td>
-    <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=838' >Uploading 3D objects takes a long time</a>
-    </nobr></td>
-    <td class='red'  ><nobr>1</nobr></td>
-    <td  ><nobr>2</nobr></td>
-    <td  ><nobr>Active</nobr></td>
-    </tr>
+
+        
+      
     <tr valign='top'>
     <td  ><nobr>862</nobr></td>
     <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=862' >Audio thumbnail can be seen in pano asset section just after uploading</a>
@@ -135,14 +110,7 @@ i{
     <td  ><nobr>2</nobr></td>
     <td  ><nobr>Active</nobr></td>
     </tr>
-    <tr valign='top'>
-    <td  ><nobr>891</nobr></td>
-    <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=891' >The 3D assets are overflowing </a>
-    </nobr></td>
-    <td  ><nobr>2</nobr></td>
-    <td  ><nobr>2</nobr></td>
-    <td  ><nobr>Active</nobr></td>
-    </tr>
+   
     <tr valign='top'>
     <td  ><nobr>896</nobr></td>
     <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=896' >Incorrect tool tips in the dashboard sidebar</a>
@@ -151,21 +119,14 @@ i{
     <td  ><nobr>2</nobr></td>
     <td  ><nobr>Active</nobr></td>
     </tr>
-    <tr valign='top'>
-      <td  ><nobr>963</nobr></td>
-      <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=963' >Sharing function not available in the more action menu in the project list page</a>
-      </nobr></td>
-      <td  ><nobr>2</nobr></td>
-      <td  ><nobr>2</nobr></td>
-      <td  ><nobr>Active </nobr><i class="fa fa-star" style="font-size:25px;color:gold;"></i></td>
-      </tr>
+    
       <tr valign='top'>
         <td  ><nobr>962</nobr></td>
         <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=962' > Eyexpo logo not clickable</a>
         </nobr></td>
         <td  ><nobr>3</nobr></td>
         <td  ><nobr>3</nobr></td>
-        <td  ><nobr>Active </nobr><i class="fa fa-star" style="font-size:25px;color:gold;"></i></td>
+        <td  ><nobr>Active </nobr></td>
         </tr>
 
 
@@ -209,6 +170,15 @@ i{
     <td  ><nobr>3</nobr></td>
     <td  ><nobr>Active</nobr></td>
     </tr>
+     
+     <tr valign='top'>
+      <td  ><nobr>977</nobr></td>
+      <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=977' >[UI] The pano image names can be seen overlapping the adjacent images</a>
+      </nobr></td>
+      <td  ><nobr>4</nobr></td>
+      <td  ><nobr>3</nobr></td>
+      <td  ><nobr>Active</nobr></td>
+      </tr>
     <tr valign='top'>
     <td  ><nobr>737</nobr></td>
     <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=737' >[UX Optimization] Some UI indication while the project list is loading instead of default no project list available placeholder</a>
@@ -231,6 +201,11 @@ i{
     <th><nobr>Severity(S)</nobr></th>
     <th><nobr>Priority(P)</nobr></th>
     <th><nobr>Status</nobr></th>
+
+
+ 
+     
+          
     <tr valign='top'>
       <td  ><nobr>775</nobr></td>
       <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=775' >[iPhone] [Tablet] failure to load &quot;Shoes_private_id&quot; project in the builder</a>
@@ -247,6 +222,24 @@ i{
     <td  ><nobr>2</nobr></td>
     <td  ><nobr>Active</nobr></td>
     </tr>
+
+    <tr valign='top'>
+      <td  ><nobr>970</nobr></td>
+      <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=970' >  [Spotlight Project] Thumbnail is also deleted after 3D object deletion </a>
+      </nobr></td>
+      <td  ><nobr>2</nobr></td>
+      <td  ><nobr>2</nobr></td>
+      <td  ><nobr>Active</nobr></td>
+      </tr>
+      <tr valign='top'>
+        <td  ><nobr>971</nobr></td>
+        <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=971' >  [Spotlight Project] project thumbnail available after page refresh</a>
+        </nobr></td>
+        <td  ><nobr>2</nobr></td>
+        <td  ><nobr>2</nobr></td>
+        <td  ><nobr>Active</nobr></td>
+        </tr>
+
       <tr valign='top'>
       <td  ><nobr>601</nobr></td>
       <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=601' >Object continue to be in the static state even after mouse-out event</a>
@@ -329,6 +322,22 @@ i{
     <td  ><nobr>3</nobr></td>
     <td  ><nobr>Active</nobr></td>
     </tr>
+    <tr valign='top'>
+        <td  ><nobr>1023</nobr></td>
+        <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=1023' > [Spotlight] Failure to see the hotspot through a transparent material (glass window)</a>
+        </nobr></td>
+        <td  ><nobr>3</nobr></td>
+        <td  ><nobr>3</nobr></td>
+        <td  ><nobr>Active</nobr></td>
+        </tr>
+    <tr valign='top'>
+      <td  ><nobr>994</nobr></td>
+      <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=994' >[Spotlight project] The 3D model is not found in the live view, when the 3D model is deleted</a>
+      </nobr></td>
+      <td  ><nobr>3</nobr></td>
+      <td  ><nobr>3</nobr></td>
+      <td  ><nobr>Active</nobr></td>
+      </tr>
       <tr valign='top'>
       <td  ><nobr>687</nobr></td>
       <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=687' >[Mobile] [UX] Z axis blocked for the hotspot added at the bottom of the object</a>
@@ -344,7 +353,7 @@ i{
         </nobr></td>
         <td  ><nobr>3</nobr></td>
         <td  ><nobr>3</nobr></td>
-        <td  ><nobr>Active </nobr><i class="fa fa-star" style="font-size:25px;color:gold;"></i></td>
+        <td  ><nobr>Active </nobr></td>
         </tr>
       <tr valign='top'>
       <td  ><nobr>705</nobr></td>
@@ -434,6 +443,22 @@ i{
     <th><nobr>Priority(P)</nobr></th>
     <th><nobr>Status</nobr></th>
       </tr>
+      <tr valign='top'>
+        <td  ><nobr>1024</nobr></td>
+        <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=1024' > [STAGING] The number of views of the live tour does not bump up</a>
+        </nobr></td>
+        <td class='red' ><nobr>1</nobr></td>
+        <td  class='red'><nobr>1</nobr></td>
+        <td  ><nobr>Active</nobr</td>
+        </tr>
+      <tr valign='top'>
+        <td  ><nobr>999</nobr></td>
+        <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=999' > [QQ Browser] [Mobile][Pro Tour Project]Inserted videos play in full screen</a>
+        </nobr></td>
+        <td class='red' ><nobr>1</nobr></td>
+        <td  class='red'><nobr>1</nobr></td>
+        <td  ><nobr>Active</nobr</td>
+        </tr>
         <tr valign='top'>
         <td  ><nobr>612</nobr></td>
         <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=612' >Scene interaction while autorotation is in progress shuffles the current scene to a different scene</a>
@@ -448,8 +473,19 @@ i{
         </nobr></td>
         <td class='red' ><nobr>1</nobr></td>
         <td class='red' ><nobr>1</nobr></td>
-        <td  ><nobr>Active </nobr><i class="fa fa-star" style="font-size:25px;color:gold;"></i></i></td>
+        <td  ><nobr>Active </nobr></td>
         </tr>
+
+  
+        <tr valign='top'>
+          <td  ><nobr>1001</nobr></td>
+          <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=1001' >[QQ] [Mobile]After updating the pro tour, reloading the tour takes forever</a>
+          </nobr></td>
+          <td  class='red'><nobr>1</nobr></td>
+          <td><nobr>2</nobr></td>
+          <td  ><nobr>Active</nobr></td>
+          </tr>
+
       <tr valign='top'>
         <td  ><nobr>588</nobr></td>
         <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=588' >[Mobile][Tablet] In live preview, User cannot go back to the original scene after teleporting to another scene</a>
@@ -458,29 +494,57 @@ i{
         <td><nobr>2</nobr></td>
         <td  ><nobr>Active</nobr></td>
         </tr>
+        <tr valign='top'>
+            <td  ><nobr>1017</nobr></td>
+            <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=1017' > Live view becomes unresponsive while opening the hotspot link a couple of times</a>
+            </nobr></td>
+            <td  ><nobr>2</nobr></td>
+            <td  ><nobr>2</nobr></td>
+            <td  ><nobr>Active</nobr></td>
+            </tr>
+  
       
         <tr valign='top'>
-        <td  ><nobr>897</nobr></td>
-        <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=897' >[Pro Project] [3D object]Missing brightness control bar leads to darker 3D objects in preview</a>
-        </nobr></td>
-        <td  class='red'><nobr>1</nobr></td>
-        <td><nobr>2</nobr></td>
-        <td  ><nobr>Active</nobr></td>
-        </tr>
-             <tr valign='top'>
-    <td  ><nobr>859</nobr></td>
-    <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=859' >[Mobile] Go to home in the tour editor button leads to 404 page</a>
-    </nobr></td>
-    <td  ><nobr>2</nobr></td>
-    <td  ><nobr>2</nobr></td>
-    <td  ><nobr>Active</nobr></td>
-    </tr>
+          <td  ><nobr>992</nobr></td>
+          <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=992' >[Pro Tour Project][Inconsistent] Unable to see the video inserted in the hotspot</a>
+          </nobr></td>
+          <td  ><nobr>2</nobr></td>
+          <td  ><nobr>2</nobr></td>
+          <td  ><nobr>Active</nobr></td>
+          </tr>
+
+          <tr valign='top'>
+              <td  ><nobr>978</nobr></td>
+              <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=978' > [Pro Tour] An active teleport can still be scene for the deleted scene in builder & viewer</a>
+              </nobr></td>
+              <td  ><nobr>2</nobr></td>
+              <td  ><nobr>2</nobr></td>
+              <td  ><nobr>Active</nobr></td>
+              </tr>
+
+          <tr valign='top'>
+            <td  ><nobr>859</nobr></td>
+            <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=859' >[Mobile] Go to home in the tour editor button leads to 404 page</a>
+            </nobr></td>
+            <td  ><nobr>2</nobr></td>
+            <td  ><nobr>2</nobr></td>
+            <td  ><nobr>Active</nobr></td>
+            </tr>
+
     <tr valign='top'>
     <td  ><nobr>944</nobr></td>
     <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=944' >[Pro Project] The title changes are not directly reflected to live view</a>
     </nobr></td>
     <td  ><nobr>2</nobr></td>
     <td  ><nobr>2</nobr></td>
+    <td  ><nobr>Active</nobr></td>
+    </tr>
+     <tr valign='top'>
+    <td  ><nobr>1055</nobr></td>
+    <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=1055' >[Pro Project]  Deleted assets not removed from builder + the Viewer</a>
+    </nobr></td>
+    <td  ><nobr>2</nobr></td>
+    <td  ><nobr>3</nobr></td>
     <td  ><nobr>Active</nobr></td>
     </tr>
         <tr valign='top'>
@@ -499,13 +563,69 @@ i{
         <td  ><nobr>2</nobr></td>
         <td  ><nobr>Active</nobr></td>
         </tr>
+                  <tr valign='top'>
+          <td  ><nobr>1056</nobr></td>
+          <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=1056' > Able to upload larger video than the recommended size </a>
+          </nobr></td>
+          <td  ><nobr>3</nobr></td>
+          <td  ><nobr>3</nobr></td>
+          <td  ><nobr>Active </nobr></td>
+          </tr>
+        <tr valign='top'>
+          <td  ><nobr>1002</nobr></td>
+          <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=1002' > [QQ][Pro tour] Splash screen takes a delay in dismissing </a>
+          </nobr></td>
+          <td  ><nobr>3</nobr></td>
+          <td  ><nobr>3</nobr></td>
+          <td  ><nobr>Active </nobr></td>
+          </tr>
+                  <tr valign='top'>
+          <td  ><nobr>1066</nobr></td>
+          <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=1066' >  Blank image widget can be seen in pro tour builder </a>
+          </nobr></td>
+          <td  ><nobr>3</nobr></td>
+          <td  ><nobr>3</nobr></td>
+          <td  ><nobr>Active </nobr></td>
+          </tr>
+                  <tr valign='top'>
+          <td  ><nobr>1063</nobr></td>
+          <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=1063' > The background of the png's inserted in the image hotspot is black in the pro tour builder </a>
+          </nobr></td>
+          <td  ><nobr>3</nobr></td>
+          <td  ><nobr>3</nobr></td>
+          <td  ><nobr>Active </nobr></td>
+          </tr>
+          <tr valign='top'>
+            <td  ><nobr>1003</nobr></td>
+            <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=1003' >  [QQ][Spotlight Project] Playing inserted video in the hotspot stays on screen even after hotspot is closed</a>
+            </nobr></td>
+            <td  ><nobr>3</nobr></td>
+            <td  ><nobr>3</nobr></td>
+            <td  ><nobr>Active </nobr></td>
+            </tr>
+        <tr valign='top'>
+            <td  ><nobr>995</nobr></td>
+            <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=995' >  [Pro Tour Project]Inaccurate splash screen message</a>
+            </nobr></td>
+            <td  ><nobr>3</nobr></td>
+            <td  ><nobr>3</nobr></td>
+            <td  ><nobr>Active </nobr></td>
+            </tr>
+            <tr valign='top'>
+                <td  ><nobr>980</nobr></td>
+                <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=980' >  [Pro Tour Project] [Mobile]The last asset appear truncated in different asset sections</a>
+                </nobr></td>
+                <td  ><nobr>3</nobr></td>
+                <td  ><nobr>3</nobr></td>
+                <td  ><nobr>Active </nobr></td>
+                </tr>
         <tr valign='top'>
           <td  ><nobr>961</nobr></td>
           <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=961' > Video save button is inactive even if unsaved changes exist</a>
           </nobr></td>
           <td  ><nobr>3</nobr></td>
           <td  ><nobr>3</nobr></td>
-          <td  ><nobr>Active </nobr><i class="fa fa-star" style="font-size:25px;color:gold;"></i></td>
+          <td  ><nobr>Active </nobr></td>
           </tr>
           <tr valign='top'>
             <td  ><nobr>964</nobr></td>
@@ -524,14 +644,7 @@ i{
         <td  ><nobr>3</nobr></td>
         <td  ><nobr>Active</nobr></td>
         </tr>
-        <tr valign='top'>
-        <td  ><nobr>537</nobr></td>
-        <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=537' >3D Lighting Misrepresentation</a>
-        </nobr></td>
-        <td  ><nobr>3</nobr></td>
-        <td  ><nobr>3</nobr></td>
-        <td  ><nobr>Active</nobr></td>
-        </tr>
+        
         <tr valign='top'>
         <td  ><nobr>555</nobr></td>
         <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=555' >Putting hotspot above teleport or vice versa will block the bottom object</a>
@@ -556,7 +669,15 @@ i{
     <td  ><nobr>3</nobr></td>
     <td  ><nobr>Active</nobr></td>
     </tr>
- 
+
+    <tr valign='top'>
+        <td  ><nobr>979</nobr></td>
+        <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=979' >[UI] Tour info button is not circular</a>
+        </nobr></td>
+        <td  ><nobr>4</nobr></td>
+        <td  ><nobr>3</nobr></td>
+        <td  ><nobr>Active</nobr></td>
+        </tr>
 
         <tr valign='top'>
         <td  ><nobr>479</nobr></td>
@@ -592,14 +713,7 @@ i{
         <td  ><nobr>4</nobr></td>
         <td  ><nobr>Active</nobr></td>
         </tr>
-        <tr valign='top'>
-        <td  ><nobr>577</nobr></td>
-        <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=577' >3D Model lighting bar</a>
-        </nobr></td>
-        <td  ><nobr>3</nobr></td>
-        <td  ><nobr>4</nobr></td>
-        <td  ><nobr>Active</nobr></td>
-        </tr>
+        
                  <tr valign='top'>
         <td  ><nobr>453</nobr></td>
         <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=453' >[Mobile] Tour info cannot be scrolled on landscape orientation</a>
@@ -648,14 +762,7 @@ i{
         <td  ><nobr>4</nobr></td>
         <td  ><nobr>Active</nobr></td>
         </tr>
-        <tr valign='top'>
-        <td  ><nobr>548</nobr></td>
-        <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=548' >[Mobile] Video is automatically paused on the first time playing</a>
-        </nobr></td>
-        <td  ><nobr>3</nobr></td>
-        <td  ><nobr>4</nobr></td>
-        <td  ><nobr>Active</nobr></td>
-        </tr>
+       
         <tr valign='top'>
         <td  ><nobr>454</nobr></td>
         <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=454' >[Mobile] Viewer Scrolling doesn&#039;t stop</a>
@@ -680,21 +787,25 @@ i{
     <th><nobr>Priority(P)</nobr></th>
     <th><nobr>Status</nobr></th>
       </tr>
-       <tr valign='top'>
-        <td  ><nobr>821</nobr></td>
-        <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=821' >  KrPano thumbnail not available after uploading</a>
-        </nobr></td>
-        <td  class='red'><nobr>1</nobr></td>
-        <td><nobr>2</nobr></td>
-        <td  ><nobr>Active</nobr></td>
-        </tr>
+      
+        
+        <tr valign='top'>
+            <td  ><nobr>1020</nobr></td>
+            <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=1020' >  [KrPano] Broken live view for the KrPano project</a>
+            </nobr></td>
+            <td  class='red'><nobr>1</nobr></td>
+            <td class='red'><nobr>1</nobr></td>
+            <td  ><nobr>Active</nobr></td>
+            </tr>
       <tr valign='top'>
         <td  ><nobr>651</nobr></td>
         <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=651' > [KRPano ] [Mobile] The Uploading status dialog is truncated</a>
         </nobr></td>
         <td  ><nobr>2</nobr></td>
         <td  ><nobr>3</nobr></td>
-        <td  ><nobr>Active</nobr></td>
+        <td  ><nobr>
+          
+          </nobr></td>
         </tr>
           <tr valign='top'>
         <td  ><nobr>953</nobr></td>
@@ -702,15 +813,7 @@ i{
         </nobr></td>
         <td  ><nobr>2</nobr></td>
         <td  ><nobr>3</nobr></td>
-        <td  ><nobr>Active</nobr></td>
-        </tr>
-                    <tr valign='top'>
-        <td  ><nobr>958</nobr></td>
-        <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=958' >[KrPano] The live view takes too long to enable</a>
-        </nobr></td>
-        <td  ><nobr>2</nobr></td>
-        <td  ><nobr>3</nobr></td>
-        <td  ><nobr>Active</nobr></td>
+        <td  ><nobr>Active</nobr> </td>
         </tr>
         </table>
 
@@ -728,22 +831,8 @@ i{
     <th><nobr>Status</nobr></th>
       </tr>
     
-    <tr valign='top'>
-    <td  ><nobr>283</nobr></td>
-    <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=283' >The timeout notification does not appear if the window is inactive</a>
-    </nobr></td>
-    <td  ><nobr>3</nobr></td>
-    <td  ><nobr>2</nobr></td>
-    <td  ><nobr>Active</nobr></td>
-    </tr>
-    <tr valign='top'>
-    <td  ><nobr>321</nobr></td>
-    <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=321' >Timeout does not log the user out of the app</a>
-    </nobr></td>
-    <td  ><nobr>2</nobr></td>
-    <td  ><nobr>2</nobr></td>
-    <td  ><nobr>Active</nobr></td>
-    </tr>
+  
+   
     <tr valign='top'>
     <td  ><nobr>713</nobr></td>
     <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=713' >[UX optimization]User is able to work with the link even if its expired</a>
@@ -753,14 +842,7 @@ i{
     <td  ><nobr>Active</nobr></td>
     </tr>
   
-    <tr valign='top'>
-    <td  ><nobr>677</nobr></td>
-    <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=677' >Dashboard shows a resizing glitch in the mobile mode</a>
-    </nobr></td>
-    <td  ><nobr>3</nobr></td>
-    <td  ><nobr>3</nobr></td>
-    <td  ><nobr>Active</nobr></td>
-    </tr>
+    
     <tr valign='top'>
     <td  ><nobr>712</nobr></td>
     <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=712' >No UI indication if entered email is/not in the system in forgot password page</a>
@@ -769,6 +851,15 @@ i{
     <td  ><nobr>3</nobr></td>
     <td  ><nobr>Active</nobr></td>
     </tr>
+            <tr valign='top'>
+    <td  ><nobr>1073</nobr></td>
+    <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=1073' >Misleading message after successfully changing the password </a>
+    </nobr></td>
+    <td  ><nobr>3</nobr></td>
+    <td  ><nobr>3</nobr></td>
+    <td  ><nobr>Active</nobr></td>
+    </tr>
+        
     <tr valign='top'>
     <td  ><nobr>772</nobr></td>
     <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=772' >legacy login session in redis is forever  </a>
@@ -777,14 +868,7 @@ i{
     <td  ><nobr>3</nobr></td>
     <td  ><nobr>Active</nobr></td>
     </tr>
-    <tr valign='top'>
-    <td  ><nobr>771</nobr></td>
-    <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=771' > First time login issues</a>
-    </nobr></td>
-    <td  ><nobr>3</nobr></td>
-    <td  ><nobr>4</nobr></td>
-    <td  ><nobr>Active</nobr></td>
-    </tr>
+    
     <tr valign='top'>
     <td  ><nobr>822</nobr></td>
     <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=822' >Incorrect info of hosting space for tier 4 user</a>
@@ -816,6 +900,14 @@ i{
     <td><nobr>2</nobr></td>
     <td  ><nobr>Active</nobr></td>
     </tr>
+    <tr valign='top'>
+        <td  ><nobr>1025</nobr></td>
+        <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=1025' > [Analytics]No analytics views data generated for new pro projects</a>
+        </nobr></td>
+        <td  class='red' ><nobr>1</nobr></td>
+        <td><nobr>2</nobr></td>
+        <td  ><nobr>Active</nobr></td>
+        </tr>
     <tr valign='top'>
     <td  ><nobr>882</nobr></td>
     <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=882' >Missing pie charts when more than 4 hotspots are added to the scene</a>
@@ -886,10 +978,10 @@ i{
 
 
     <h2>3D Asset Library Bugs</h2>
-    <button type="button" class="btn btn-success" id="download" onclick="exportTableToExcel('id8')">Download Report</button>
+    <button type="button" class="btn btn-success" id="download" onclick="exportTableToExcel('id7')">Download Report</button>
     <h4> This includes: </h4>
     <ul><li>Bugs related to 3D Asset Library tab</li></ul>
-    <table class="table table-striped" id="id6"> 
+    <table class="table table-striped" id="id7"> 
       <tr>
       <th><nobr>ID</nobr></th>
     <th><nobr>Title</nobr></th>
@@ -897,14 +989,7 @@ i{
     <th><nobr>Priority(P)</nobr></th>
     <th><nobr>Status</nobr></th>
       </tr>
-        <tr valign='top'>
-        <td  ><nobr>866</nobr></td>
-        <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=866' >Assets overlap with the uploader status bar &amp; other dialogs in the 3D asset library</a>
-        </nobr></td>
-        <td  class='red'><nobr>1</nobr></td>
-        <td><nobr>2</nobr></td>
-        <td  ><nobr>Active</nobr></td>
-        </tr>
+
       <tr valign='top'>
         <td  ><nobr>894</nobr></td>
         <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=894' >Needs a page refresh to see the uploaded asset in 3D asset library</a>
@@ -922,6 +1007,16 @@ i{
         <td  ><nobr>3</nobr></td>
         <td  ><nobr>Active</nobr></td>
         </tr>
+
+        <tr valign='top'>
+            <td  ><nobr>975</nobr></td>
+            <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=975' > [3D asset library ] The recently uploaded 3D assets appears at the end of the list</a>
+            </nobr></td>
+            <td  ><nobr>3</nobr></td>
+            <td  ><nobr>3</nobr></td>
+            <td  ><nobr>Active</nobr></td>
+            </tr>
+            
         <tr valign='top'>
         <td  ><nobr>893</nobr></td>
         <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=893' >[iPhone] The 3D asset is scrollable</a>
@@ -938,23 +1033,14 @@ i{
         <td  ><nobr>4</nobr></td>
         <td  ><nobr>Active</nobr></td>
         </tr>
-        <tr valign='top'>
-        <td  ><nobr>844</nobr></td>
-        <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=844' >[Mobile] The 3D asset page error</a>
-        </nobr></td>
-        <td  class='red'><nobr>1</nobr></td>
-        <td  ><nobr>4</nobr></td>
-        <td  ><nobr>Active</nobr></td>
-        </tr>
-    </table>
+         </table>
 
 
-
-    <h2>Production-Staging Bugs</h2>
-    <button type="button" class="btn btn-success" id="download" onclick="exportTableToExcel('id7')">Download Report</button>
+<h2>.CN Bugs</h2>
+    <button type="button" class="btn btn-success" id="download" onclick="exportTableToExcel('id8')">Download Report</button>
     <h4> This includes: </h4>
     <ul><li>Bugs logged on Staging</li><li>Bugs logged on Production</li></ul>
-    <table class="table table-striped" id="id7"> 
+    <table class="table table-striped" id="id8"> 
       <tr>
       <th><nobr>ID</nobr></th>
     <th><nobr>Title</nobr></th>
@@ -962,15 +1048,67 @@ i{
     <th><nobr>Priority(P)</nobr></th>
     <th><nobr>Status</nobr></th>
       </tr>
+    
+          <tr valign='top'>
+            <td  ><nobr>983</nobr></td>
+            <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=983' >[.CN STAGING] Application crashes after uploading the assets and refreshing the page</a>
+            </nobr></td>
+            <td  class='red' ><nobr>1</nobr></td>
+            <td  class='red' ><nobr>1</nobr></td>
+            <td  ><nobr>Active</nobr></td>
+            </tr>
+          
+         
+                <tr valign='top'>
+                  <td  ><nobr>1007</nobr></td>
+                  <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=1007' >Video plays in full screen on WeChat </a>
+                  </nobr></td>
+                  <td  class='red' ><nobr>1</nobr></td>
+                  <td  class='red' ><nobr>1</nobr></td>
+                  <td  ><nobr>Active</nobr></td>
+                  </tr> 
+                                
+                  <tr valign='top'>
+                    <td  ><nobr>952</nobr></td>
+                    <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=952' > [STAGING .CN]Pro Builder using English in staging.com.cn</a>
+                    </nobr></td>
+                    <td  ><nobr>2</nobr></td>
+                    <td  ><nobr>2</nobr></td>
+                    <td  ><nobr>Active</nobr></td>
+                    </tr>
+                  <tr valign='top'>
+                    <td  ><nobr>1000</nobr></td>
+                    <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=1000' >the builder loading is slow or lag when user uploaded over 20 jpeg image</a>
+                    </nobr></td>
+                    <td ><nobr>3</nobr></td>
+                    <td ><nobr>3</nobr></td>
+                    <td  ><nobr>Active</nobr></td>
+                    </tr> 
+                   
+                      <tr valign='top'>
+                        <td  ><nobr>1006</nobr></td>
+                        <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=1006' >  fav icon replace  </a>
+                        </nobr></td>
+                        <td ><nobr>3</nobr></td>
+                        <td ><nobr>3</nobr></td>
+                        <td  ><nobr>Active</nobr>/td>
+                        </tr>
+      </table>
       
-        <tr valign='top'>
-          <td  ><nobr>628</nobr></td>
-          <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=628' >Deleting the default scene from the tour leads to 404 page</a>
-          </nobr></td>
-          <td  class='red' ><nobr>1</nobr></td>
-          <td  class='red' ><nobr>1</nobr></td>
-          <td  ><nobr>Active </nobr><i class="fa fa-star" style="font-size:25px;color:gold;"></i></td>
-          </tr>
+      
+    <h2>Production-Staging Bugs</h2>
+    <button type="button" class="btn btn-success" id="download" onclick="exportTableToExcel('id9')">Download Report</button>
+    <h4> This includes: </h4>
+    <ul><li>Bugs logged on Staging</li><li>Bugs logged on Production</li></ul>
+    <table class="table table-striped" id="id9"> 
+      <tr>
+      <th><nobr>ID</nobr></th>
+    <th><nobr>Title</nobr></th>
+    <th><nobr>Severity(S)</nobr></th>
+    <th><nobr>Priority(P)</nobr></th>
+    <th><nobr>Status</nobr></th>
+      </tr>
+   
 
         
                 <tr valign='top'>
@@ -981,6 +1119,33 @@ i{
         <td  class='red' ><nobr>1</nobr></td>
         <td  ><nobr>Active</nobr></td>
         </tr>
+      
+      <tr valign='top'>
+        <td  ><nobr>1069</nobr></td>
+        <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=1069' > Missing Video, Audio, 3D objects associated with the project after the deployment	</a>
+        </nobr></td>
+        <td  class='red' ><nobr>1</nobr></td>
+        <td><nobr>2</nobr></td>
+        <td  ><nobr>Active</nobr></td>
+        </tr>
+      <tr valign='top'>
+        <td  ><nobr>1071</nobr></td>
+        <td  ><nobr><a href='https://p
+            ms.eyexpo.co/index.php?m=bug&f=view&bugID=1071' >	 [Production][Analytics] No data while revisiting the overview the and different project data for the pro tours</a>
+        </nobr></td>
+        <td  class='red' ><nobr>1</nobr></td>
+        <td><nobr>2</nobr></td>
+        <td  ><nobr>Active</nobr></td>
+        </tr>
+      <tr valign='top'>
+        <td  ><nobr>1070</nobr></td>
+        <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=1070' >	Private tours after migration leads to 404 page</a>
+        </nobr></td>
+        <td  class='red' ><nobr>1</nobr></td>
+        <td><nobr>2</nobr></td>
+        <td  ><nobr>Active</nobr></td>
+        </tr>
+      
   <tr valign='top'>
         <td  ><nobr>951</nobr></td>
         <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=951' >[STAGING] Failure to signup	</a>
@@ -989,24 +1154,8 @@ i{
         <td><nobr>2</nobr></td>
         <td  ><nobr>Active</nobr></td>
         </tr>
-          <tr valign='top'>
-        <td  ><nobr>808</nobr></td>
-        <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=808' > [STAGING] Forgot password does not work</a>
-        </nobr></td>
-        <td  class='red' ><nobr>1</nobr></td>
-        <td><nobr>2</nobr></td>
-        <td  ><nobr>Active</nobr></td>
-        </tr>
-
-               
-      <tr valign='top'>
-        <td  ><nobr>952</nobr></td>
-        <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=952' > [STAGING .CN]Pro Builder using English in staging.com.cn</a>
-        </nobr></td>
-        <td  ><nobr>2</nobr></td>
-        <td  ><nobr>2</nobr></td>
-        <td  ><nobr>Active</nobr></td>
-        </tr>
+   
+ 
       <tr valign='top'>
         <td  ><nobr>722</nobr></td>
         <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=722' >[Production] [UX] Admin unable to change the default language depending on the region</a>
@@ -1024,15 +1173,8 @@ i{
             <td  ><nobr>3</nobr></td>
             <td  ><nobr>Active</nobr></td>
             </tr>
-           
- <tr valign='top'>
-        <td  ><nobr>950</nobr></td>
-        <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=950' > [.CN STAGING]  All the assets gets deleted after 15-20mins of upload</a>
-        </nobr></td>
-        <td  class='red' ><nobr>1</nobr></td>
-        <td ><nobr>4</nobr></td>
-        <td  ><nobr>Active</nobr></td>
-        </tr>
+
+     
               <tr valign='top'>
                 <td  ><nobr>910</nobr></td>
                 <td  ><nobr><a href='https://pms.eyexpo.co/index.php?m=bug&f=view&bugID=910' > [Simultaneous Login to QA + STAGING] 404 when user clicks on "Go to builder"</a>
